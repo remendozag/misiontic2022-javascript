@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ejemplo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <!--Iniciar el Formulario-->
+    <form action="registro.jsp" method="POST">
+        <legend>Formulario de Registro de Usuario:</legend>
+        <fieldset>
+            <label>
+                Nombre:
+                <input type="text" name="nombre" placeholder="Escriba aqui su nombre">
+            </label>
+            <br>
+            <label>
+                Apellido:
+                <input type="text" name="apellido" placeholder="Escriba su apellido">
+            </label>
+            <br>
+            <label>
+                Telefono:
+                <input type="tel" name="telefono">
+            </label>
+            <br>
+            <label>URL de LinkedIn:
+                <input type="url" name="linkedin">
+            </label>
+            <br>
+            <label>
+                Correo:
+                <input type="email" name="correo">
+            </label>
+            <br>
+            <label>
+                Contraseña:
+                <input type="password" name="clave">
+            </label>
+            <br>
+            <label>
+                Repita Contraseña:
+                <input type="password" name="clave">
+            </label>
+            <br>
+            <label>
+                Biografia:
+                <br>
+                <textarea name="biografia" id="" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <label>
+                Numero de empleados en la empresa:
+                <input type="number" name="numeroempleados">
+            </label>
+            <br>
+            <label>
+                Fecha de Nacimiento:
+                <input type="date" name="fechanac">
+            </label>
+            <br>
+            <label>Sexo:
+                <input type="radio" name="sexo" value="M">Masculino
+                <input type="radio" name="sexo" value="F">Femenino
+            </label>
+            <br>
+            <label>Hobbies:
+                <input type="checkbox" name="Programar" checked>Programar
+                <input type="checkbox" name="Cine">Cine
+                <input type="checkbox" name="Maratonear Netflix">Maratonear Netflix
+            </label>
+            <br>
+            <label>Tipo de Rol SCRUM:
+                <select name="rol">
+                    <option value="Product Owner">Product Owner</option>
+                    <option value="Scrum Master" selected>Scrum Master</option>
+                    <option value="Team Developer">Team Developer</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Color:
+                <input type="color" name="color">
+            </label>
+            <br>
+            <label>
+                Foto:
+                <input type="file" name="foto" accept="image/x-png,image/gif,image/jpeg">
+            </label>
+            <br>
+            <input type="hidden" name="rol" value="usuario">
+            <input type="submit" value="Registrar Usuario">
+            <input type="reset" value="Limpiar">
+        </fieldset>
+    </form>
+    <form action="buscar.jsp">
+        <label>
+            Buscar un Usuario:
+            <input type="search" name="buscar">
+            <input type="image" src="../img/lupa.png" alt="Buscar" width="25" height="25">
+        </label>
+    </form>
+</body>
+</html>
